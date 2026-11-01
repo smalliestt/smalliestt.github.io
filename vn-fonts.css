@@ -1,0 +1,6 @@
+/* Vietnamese letters (ệ, ơ, ở, ị…) are missing from Outfit and Instrument Serif. These small supplements are built from each font's own glyphs and only cover those letters. */
+@font-face{font-family:"Outfit";font-style:normal;font-weight:300;font-display:swap;src:url('fonts/vn-outfit-300.woff') format('woff');unicode-range:U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF1,U+1EF4-1EF9}
+@font-face{font-family:"Outfit";font-style:normal;font-weight:400;font-display:swap;src:url('fonts/vn-outfit-400.woff') format('woff');unicode-range:U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF1,U+1EF4-1EF9}
+@font-face{font-family:"Outfit";font-style:normal;font-weight:500;font-display:swap;src:url('fonts/vn-outfit-500.woff') format('woff');unicode-range:U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF1,U+1EF4-1EF9}
+@font-face{font-family:"Outfit";font-style:normal;font-weight:600;font-display:swap;src:url('fonts/vn-outfit-600.woff') format('woff');unicode-range:U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF1,U+1EF4-1EF9}
+@font-face{font-family:"Instrument Serif";font-style:normal;font-weight:400;font-display:swap;src:url('fonts/vn-instrument-serif.woff') format('woff');unicode-range:U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF1,U+1EF4-1EF9}

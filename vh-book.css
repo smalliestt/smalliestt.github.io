@@ -1,0 +1,46 @@
+.menu-book{width:min(960px,calc(100% - var(--gl) - var(--gr)));margin:40px auto 0;text-align:center;color:#2b241b;scroll-margin-top:110px}
+.menu-book__stage{position:relative;width:100%;aspect-ratio:1800/1600;perspective:2200px;isolation:isolate;touch-action:pan-y;border-radius:3px;background:transparent}
+.menu-book[data-state=cover] .menu-book__stage{transform:translateX(-25%)}
+.menu-book[data-state=back] .menu-book__stage{transform:translateX(25%)}
+.menu-book__page{box-shadow:0 20px 45px rgba(70,46,20,.16)}
+.menu-book__page[hidden]{display:none}
+.menu-book[data-state=cover] .menu-book__spine,.menu-book[data-state=back] .menu-book__spine{display:none}
+.menu-book[data-state=cover] .menu-book__edge--right{left:50%;right:auto;width:50%}
+.menu-book[data-state=back] .menu-book__edge--left{left:0;width:50%}
+.menu-book__page,.menu-book__face{position:absolute;top:0;bottom:0;width:50%;overflow:hidden;background:#f3eee4}
+.menu-book__page--left{left:0;border-radius:3px 0 0 3px}
+.menu-book__page--right{right:0;border-radius:0 3px 3px 0}
+.menu-book__page img,.menu-book__face img{display:block;width:100%;height:100%;object-fit:contain;user-select:none;-webkit-user-drag:none}
+.menu-book__page--left::after,.menu-book__page--right::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent 85%,rgba(63,42,20,.10))}
+.menu-book__page--right::after{background:linear-gradient(90deg,rgba(63,42,20,.10),transparent 15%)}
+.menu-book__leaf{position:absolute;inset:0 0 0 50%;width:50%;z-index:3;transform-origin:left center;transform-style:preserve-3d;pointer-events:none}
+.menu-book__leaf[hidden]{display:none}
+.menu-book__face{inset:0;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.menu-book__face--back{transform:rotateY(180deg)}
+.menu-book__face::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(63,42,20,.16),transparent 22%,rgba(63,42,20,.04));pointer-events:none}
+.menu-book__spine{position:absolute;inset:0 auto 0 50%;width:1px;background:rgba(70,46,20,.14);z-index:4;pointer-events:none}
+.menu-book__edge{position:absolute;top:0;bottom:0;width:20%;z-index:5}
+.menu-book__edge--left{left:0}.menu-book__edge--right{right:0}
+.menu-book__edge:focus-visible{outline:2px solid #d83427;outline-offset:4px}
+.menu-book__edge:disabled{cursor:default}
+.menu-book__bar{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:28px}
+.menu-book__arrow{display:grid;place-items:center;width:48px;height:48px;border:1px solid currentColor;border-radius:50%;font:400 24px/1 var(--f-ui)}
+.menu-book__arrow:disabled{opacity:.28;cursor:default}
+.menu-book__count{min-width:110px;font:500 13px/1.4 var(--f-mono)}
+.menu-book__hint{margin:14px 0 10px;font:400 13px/1.5 var(--f-ui);color:var(--ink-muted)}
+.menu-book__case{display:inline-flex;align-items:center;min-height:44px;font:500 14px/1.4 var(--f-ui);text-underline-offset:4px}
+@media(hover:hover) and (pointer:fine){.menu-book__arrow:not(:disabled):hover{background:#2b241b;color:#f3eee4}}
+@media(max-width:599px){.menu-book{margin-top:24px}.menu-book__bar{margin-top:20px;gap:16px}.menu-book__hint{font-size:12px}}
+.menu-book__bar,.menu-book__hint{transition:transform 600ms var(--ease-io,cubic-bezier(.77,0,.175,1))}
+@media(prefers-reduced-motion:reduce){.menu-book__bar,.menu-book__hint{transition:none}}
+/* A closed menu lies on the table, a little larger and tilted; it straightens to full size as it opens.
+   rotate/scale are separate from the transform the script uses to slide the book, and the origin sits on the
+   closed cover's centre (the cover is shifted by the slide), so the cover turns in place. */
+.menu-book{--cover-scale:1;--cover-tilt:0deg}
+.vh-reader .menu-book{--cover-scale:1.08;--cover-tilt:-3deg}
+.menu-book__stage{transform-origin:50% 50%;transition:scale 600ms var(--ease-io,cubic-bezier(.77,0,.175,1)),rotate 600ms var(--ease-io,cubic-bezier(.77,0,.175,1))}
+.menu-book[data-state="cover"] .menu-book__stage{scale:var(--cover-scale);rotate:var(--cover-tilt)}
+.menu-book[data-state="back"] .menu-book__stage{scale:var(--cover-scale);rotate:calc(var(--cover-tilt) * -1)}
+@media(min-width:1000px){.vh-reader .menu-book{--cover-scale:1.2;--cover-tilt:-4deg}.vh-reader .menu-book__stage{transform-origin:60% 50%}}
+@media(prefers-reduced-motion:reduce){.menu-book__stage{transition:none}}
+@media(max-width:999px){.vh-reader .menu-book{padding-top:calc(var(--cover-room,0px) + 12px)}}

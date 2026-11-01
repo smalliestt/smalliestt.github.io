@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeBook xmlns="urn:QDA-XML:codebook:1.0" origin="Viktoriia Volkova · portfolio research"><Codes><Code guid="AFE4F621-2F71-5743-A924-F819E63D9EA6" name="Orientation &amp; wayfinding" isCodable="true" color="#2E7D5B"><Description>How a layout tells people where they are, where things live and how to get back.</Description><Code guid="EB691C63-E29D-54B9-9204-775CCC48CC8C" name="Stable layout" isCodable="true" color="#2E7D5B"><Description>Elements that keep the same place across screens or pages.
+Include: Persistent panels, fixed navigation, repeated page structure.
+Exclude: Visual similarity with no navigation role.</Description></Code><Code guid="B90CC02F-780F-5D7E-AF76-50E124F46871" name="Entry points" isCodable="true" color="#2E7D5B"><Description>Distinct routes into a feature or a piece of content.
+Include: Banners, cards, buttons and headings that start a path.
+Exclude: Decorative elements that lead nowhere.</Description></Code><Code guid="6898CBE4-D6EF-58B2-9685-05F0C1E3D8A6" name="Wayfinding cues" isCodable="true" color="#2E7D5B"><Description>Labels, headings and markers that help someone place themselves.
+Include: Category headings, tabs, step numbers, legends, page labels.
+Exclude: Content text read for its own sake.</Description></Code><Code guid="9258DB61-3589-59FD-9D81-E4B79A2160CF" name="Return &amp; exit paths" isCodable="true" color="#2E7D5B"><Description>Ways back to familiar ground after a detour.
+Include: Back arrows, close buttons, 'start chat' after browsing, home tab.
+Exclude: Exit used as a retention device (code AG.exit).</Description></Code></Code><Code guid="B8AFC517-42EC-54E9-BA33-257B33F23CFA" name="Attention &amp; hierarchy" isCodable="true" color="#B5443C"><Description>What the design asks people to look at first, and how strongly.</Description><Code guid="DC4E2D38-E230-5B77-999C-DC6503DCDCD3" name="Focal element" isCodable="true" color="#B5443C"><Description>The single element that dominates a screen or page.
+Include: Hero portrait, large title, central count.
+Exclude: Elements that share emphasis equally.</Description></Code><Code guid="B92A1B82-198D-5979-8EC2-DB46DF2CB815" name="Accent colour as signal" isCodable="true" color="#B5443C"><Description>Colour used to mark the next action or the important item.
+Include: Gradient buttons, red prices, a highlighted chip.
+Exclude: Colour used only for identity (code SY.colour).</Description></Code><Code guid="32CD58F7-164D-51E6-97DD-2D01E37127DA" name="Scale contrast" isCodable="true" color="#B5443C"><Description>Size differences that rank information.
+Include: Large selected value beside small neighbours, giant type.
+Exclude: Uniform type sizes.</Description></Code><Code guid="321FFEEF-1025-5EE7-A4D8-AC3F2DD1E35C" name="Motion &amp; reveal" isCodable="true" color="#B5443C"><Description>Movement or staged disclosure that pulls attention.
+Include: Spin results, reveal animation, breathing pulse.
+Exclude: Static layouts.</Description></Code></Code><Code guid="E5FAB74F-A6FF-5D27-945A-883318DE2B3F" name="Legibility &amp; information design" isCodable="true" color="#3466A5"><Description>Whether text, numbers and symbols can be read and compared.</Description><Code guid="160F6404-DA37-5F6A-85E0-D2FE4A3B62F7" name="Numerals &amp; data" isCodable="true" color="#3466A5"><Description>How numbers, prices, durations and counts are set.
+Include: Price columns, timers, statistics, dates.
+Exclude: Numbers that carry no information (decoration).</Description></Code><Code guid="D78522D3-2729-5E45-BD89-D2FB003326B3" name="Type roles &amp; pairing" isCodable="true" color="#3466A5"><Description>Different typefaces or weights doing different jobs.
+Include: Display vs text faces, italics for a second language.
+Exclude: A single style used throughout.</Description></Code><Code guid="BBC2404F-9D86-550E-8B82-F689643314E9" name="Multilingual text" isCodable="true" color="#3466A5"><Description>Two or more languages on the same surface.
+Include: Polish/Vietnamese pairs, Polish/English menus, EN/PL posters.
+Exclude: Loanwords inside one language.</Description></Code><Code guid="A9CFB3E4-9BE8-508E-B172-844E7C9A4390" name="Symbols &amp; legends" isCodable="true" color="#3466A5"><Description>Icons, signs and emoji that replace or support words.
+Include: Dietary signs, emoji cards, QR codes, icon rows.
+Exclude: Pictures that carry no instruction.</Description></Code><Code guid="657CD319-2509-5774-8216-5770155D64D8" name="Text density" isCodable="true" color="#3466A5"><Description>How much text competes on one surface.
+Include: Dense lists, long descriptions, crowded columns.
+Exclude: Short, isolated labels.</Description></Code></Code><Code guid="97769C4C-8C0B-5A95-8D34-71CB1943B7D8" name="Agency &amp; control" isCodable="true" color="#7C569E"><Description>How much choice people keep: to skip, stop, understand the cost or leave.</Description><Code guid="95440D40-1F89-5836-84C1-1AECFCE361EE" name="Optional steps" isCodable="true" color="#7C569E"><Description>Steps people can skip without penalty.
+Include: Skip links, optional notes, optional ads.
+Exclude: Required steps.</Description></Code><Code guid="235DCEEE-707E-5FEF-B591-29E96B3EDEC1" name="Transparency of cost &amp; odds" isCodable="true" color="#7C569E"><Description>Information that explains price, probability or terms before a decision.
+Include: Drop rates, pity counters, plan prices, 'prices include VAT'.
+Exclude: Price shown only after commitment.</Description></Code><Code guid="27B6F889-646E-5B80-9CB3-47AC031F32B0" name="Pause, quit &amp; leave" isCodable="true" color="#7C569E"><Description>Controls that interrupt an activity and explain the consequence.
+Include: Pause/quit buttons, close icons, leave dialogs.
+Exclude: Navigation between unrelated screens.</Description></Code><Code guid="CD3415B7-D99A-552C-A214-3B8F502FF0A9" name="Starting help" isCodable="true" color="#7C569E"><Description>Prompts that lower the effort of a first action.
+Include: Suggested replies, presets, default durations, guided sessions.
+Exclude: Instructions with no actionable start.</Description></Code></Code><Code guid="4983C56B-2569-54EE-93D7-D8E30C6E9145" name="Feedback &amp; progress" isCodable="true" color="#77782F"><Description>Signals about what has happened, what is happening and how far there is to go.</Description><Code guid="7E7619A8-849A-5554-8BD4-AA36E6041C2B" name="Completion response" isCodable="true" color="#77782F"><Description>Acknowledgement after finishing something.
+Include: Result screens, congratulation, mood check-in.
+Exclude: Generic success toasts with no content.</Description></Code><Code guid="C6D0768F-90D7-58AB-A0DF-2DB68EC7AE52" name="History &amp; streaks" isCodable="true" color="#77782F"><Description>Records of past activity.
+Include: Calendars, session lists, streak badges, totals.
+Exclude: Forecasts or goals.</Description></Code><Code guid="F8407BBA-CA29-5131-8BBE-A7DE48B4C002" name="System states" isCodable="true" color="#77782F"><Description>Screens that explain loading, offline or empty conditions.
+Include: Splash loader, offline screen, error recovery.
+Exclude: Normal content screens.</Description></Code><Code guid="FD3D8188-8381-5841-B759-A6F20FA21905" name="Progress to a goal" isCodable="true" color="#77782F"><Description>Visible distance to a target.
+Include: Pity counter, 'day 1 of 5', scrubber, stamps on a loyalty card.
+Exclude: Past totals without a target.</Description></Code></Code><Code guid="9DF27437-7D1B-52F7-83C8-0482C13E9A3C" name="Visual system &amp; coherence" isCodable="true" color="#AD6A30"><Description>Repeated decisions that make many pieces read as one family.</Description><Code guid="7DB8D5D8-F075-5368-8C1B-E9599A43E6A3" name="Colour system" isCodable="true" color="#AD6A30"><Description>A limited palette applied with rules.
+Include: Brand gradient, red-and-cream, three pastel accents, cobalt.
+Exclude: One-off colour choices.</Description></Code><Code guid="BC8446B0-5268-5690-9300-5D142ED74776" name="Recurring motif" isCodable="true" color="#AD6A30"><Description>A graphic element repeated across pieces.
+Include: Dotted dragon, ξ mark, yellow contour, starburst.
+Exclude: A single illustration.</Description></Code><Code guid="4B1BC1A7-CB46-50AB-9848-FB969BFEF13D" name="Typographic system" isCodable="true" color="#AD6A30"><Description>Consistent type styles across a set.
+Include: Rounded headings plus italics, heavy grotesque titles.
+Exclude: Mixed type with no rule.</Description></Code><Code guid="5F54BB54-863A-532C-AF89-E127C6630772" name="Series consistency" isCodable="true" color="#AD6A30"><Description>Elements that tie a series while each piece varies.
+Include: Poster templates, shared footer, triptych treatment.
+Exclude: Pieces with nothing in common.</Description></Code><Code guid="33D3FACD-C0AB-5AB3-9919-D41995404980" name="Brand touchpoints" isCodable="true" color="#AD6A30"><Description>The identity extended to objects and formats beyond the main piece.
+Include: Bag, box, loyalty card, apron, tees.
+Exclude: The core menu or screen itself.</Description></Code></Code><Code guid="86D1137A-BE5E-5C1F-ADCE-1BEDBBFD9058" name="Meaning &amp; context" isCodable="true" color="#4E6C78"><Description>Associations that depend on culture, community or personal history.</Description><Code guid="5C7307BD-4E4A-5087-B42B-4B0C600C13A7" name="Cultural references" isCodable="true" color="#4E6C78"><Description>References to national or cultural heritage.
+Include: Traditional Ukrainian dress, Vietnamese dish names, Diia.
+Exclude: Universal symbols.</Description></Code><Code guid="285DB3FF-5F06-5F9B-A627-6CCD04F297C7" name="Community codes" isCodable="true" color="#4E6C78"><Description>Insider symbols a group recognises.
+Include: ξ, binary, keyboard keys, faculty room numbers.
+Exclude: Signs aimed at the general public.</Description></Code><Code guid="1EC33008-4F4D-50AE-9E2A-0939985EC2B0" name="Localisation" isCodable="true" color="#4E6C78"><Description>Adapting content for a language or market.
+Include: EN versions of PL posters, EN switcher, VAT note.
+Exclude: Untranslated content.</Description></Code><Code guid="7AD85399-4C61-5A20-BA56-5315616115C1" name="Emotional statement" isCodable="true" color="#4E6C78"><Description>Work that expresses a feeling or a position.
+Include: War response, manifesto, handwritten words.
+Exclude: Neutral information.</Description></Code></Code><Code guid="EDB4833A-61E8-5CEC-83BC-CC0208F4B40D" name="Engagement &amp; economy" isCodable="true" color="#1F8697"><Description>Mechanics that invite people to return, collect or pay.</Description><Code guid="E69A9CD8-6AA9-580F-BECE-15AA5B5B50C6" name="Collecting &amp; discovery" isCodable="true" color="#1F8697"><Description>Meeting or collecting new content by chance or choice.
+Include: Gacha banners, character library, rate-up.
+Exclude: Fixed catalogues.</Description></Code><Code guid="963C4753-961E-596A-884B-9A245E1337DC" name="Currency &amp; rewards" isCodable="true" color="#1F8697"><Description>Gems, points, passes and free rewards.
+Include: Gem balance, tasks, packs, loyalty stamps.
+Exclude: Prices for real goods without a reward loop (code AG.odds).</Description></Code><Code guid="E746EC30-E776-5648-BF24-F5D1D47F7729" name="Offer placement" isCodable="true" color="#1F8697"><Description>Where purchase prompts appear and how loudly.
+Include: Shop modal, first-purchase bonus, trial plan.
+Exclude: Purchase information in terms and footers.</Description></Code><Code guid="EAB2C6CC-6469-5D43-A719-01A83DBA9F7E" name="Onboarding incentive" isCodable="true" color="#1F8697"><Description>Rewards or reasons to start.
+Include: 50 gems on sign-up, free trial, free ticket code.
+Exclude: Rewards for long-term use.</Description></Code></Code><Code guid="D354290D-5237-5637-9ED7-A4FFED730897" name="Tone &amp; emotional register" isCodable="true" color="#B85A7B"><Description>The mood the design sets.</Description><Code guid="245DA1C9-7C0A-5B8E-BA60-95DDDA0E5916" name="Calm &amp; restraint" isCodable="true" color="#B85A7B"><Description>Muted colour, space and slow pacing.
+Include: Pastel blocks, soft circles, quiet lists.
+Exclude: Energetic layouts.</Description></Code><Code guid="A3D98EFD-6634-580C-B2A1-B4B1F84AA375" name="Play &amp; excitement" isCodable="true" color="#B85A7B"><Description>Energy, surprise and humour.
+Include: Stars, bursts, spirals, rotated type.
+Exclude: Neutral layouts.</Description></Code><Code guid="A3BD33DE-0FA7-52A8-B3C8-CB4C1CBC9A24" name="Tension &amp; urgency" isCodable="true" color="#B85A7B"><Description>Pressure, conflict or time limits.
+Include: Countdown timers, handwritten scrawl, sickle.
+Exclude: Calm states.</Description></Code><Code guid="ED19D297-A83B-5486-B552-F91A8925067F" name="Encouragement" isCodable="true" color="#B85A7B"><Description>Supportive, non-judging wording or feedback.
+Include: 'Calm in 5 days', 'Only you see this', positive results.
+Exclude: Neutral labels.</Description></Code></Code><Code guid="F92D1187-C5F0-5DB0-8B51-6476485EC4FE" name="Design reasoning" isCodable="true" color="#6E5D45"><Description>What the designer says about precedents, constraints and intent.</Description><Code guid="D9073407-C32B-5C98-9813-D2B9D6DD1DC3" name="References &amp; precedents" isCodable="true" color="#6E5D45"><Description>Products or traditions named as inspiration.
+Include: Telegram, Romance Club, Diia, gacha games.
+Exclude: Unnamed influences.</Description></Code><Code guid="B275E732-0BDA-502E-A50D-D893EB554ECC" name="Brief &amp; constraints" isCodable="true" color="#6E5D45"><Description>Given limits and the job to be done.
+Include: Only the KSI mark was given; corridor viewing; old menu.
+Exclude: Self-chosen style preferences.</Description></Code><Code guid="9F07B3BD-EF42-5703-AB72-C2B2E044B900" name="Stated intention" isCodable="true" color="#6E5D45"><Description>What the designer wanted a decision to achieve.
+Include: 'I wanted…', 'The aim was…'.
+Exclude: Reported outcomes.</Description></Code><Code guid="F8AEAEAF-9EDA-56C7-B1BF-C0734B48B3CE" name="Before → after" isCodable="true" color="#6E5D45"><Description>Comparison with a previous version.
+Include: Old menu pages, redesign comparisons.
+Exclude: Unrelated alternatives.</Description></Code><Code guid="CE16089F-29FF-5439-8DCC-38F91EB44C65" name="Scope &amp; role" isCodable="true" color="#6E5D45"><Description>What the designer was responsible for.
+Include: Role statements, deliverables, printed vs concept.
+Exclude: Team or client work not done by the designer.</Description></Code></Code><Code guid="CD2F6423-2C42-558D-A19A-92350190B898" name="Trade-offs &amp; risks" isCodable="true" color="#8E4464"><Description>Plausible costs of a decision, recorded so they can be tested.</Description><Code guid="1F55814A-B778-5673-8747-D7772EF4770D" name="Competing attention" isCodable="true" color="#8E4464"><Description>Two strong elements that may fight for the first look.
+Include: Portrait vs cost, motif vs dates, dragon vs list.
+Exclude: Clear single focus.</Description></Code><Code guid="13820F68-2BF0-5C44-8D4E-3748BC2EF644" name="Spending pressure" isCodable="true" color="#8E4464"><Description>Mechanics that may push repeated paying.
+Include: Random rewards, timers on banners, bonus packs.
+Exclude: Neutral price lists.</Description></Code><Code guid="F64EECD8-2525-5294-A141-F1D2609E331C" name="Ambiguous reading" isCodable="true" color="#8E4464"><Description>Signs that may be read differently by different people.
+Include: Insider symbols, handwriting, emoji, abstract icons.
+Exclude: Explicit labels.</Description></Code><Code guid="480F38B5-D612-5CA9-96B5-664C47D52F32" name="Accessibility risk" isCodable="true" color="#8E4464"><Description>Choices that may exclude some readers.
+Include: Low-contrast small text, colour-only meaning, tiny print.
+Exclude: High-contrast large text.</Description></Code></Code><Code guid="EB00F473-7AE1-5E8E-A7A8-F7FFB1B43C8D" name="Validation plan" isCodable="true" color="#5A6470"><Description>What still needs evidence from real people, and how to get it.</Description><Code guid="B443432A-6EDC-5CCF-B64B-CF1113B5F9E7" name="Task to observe" isCodable="true" color="#5A6470"><Description>A concrete task for a future interview or test.
+Include: 'Find…', 'Compare…', 'Set the timer…'.
+Exclude: General opinions.</Description></Code><Code guid="11833786-B96A-58A4-A196-E98EEDE9687A" name="Evidence gap" isCodable="true" color="#5A6470"><Description>What the materials cannot show on their own.
+Include: Statements about outcomes that need data.
+Exclude: Settled facts about the artefact.</Description></Code></Code></Codes></CodeBook>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found · Viktoriia Volkova</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#fbf6ee">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23fc3d50'/></svg>">
+<style>
+@font-face{font-family:"VV Serif";src:url("/fonts/portfolio-instrument-serif.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"VV Outfit";src:url("/fonts/portfolio-outfit.ttf") format("truetype");font-weight:100 900;font-display:swap}
+:root{--milk:#fbf6ee;--ink:#1e1a17;--muted:#6f655c;--line:#e6daca;--accent:#c71c2f;
+  --spectrum:#fc3d50 0deg,#ff8f21 30deg,#feb210 45deg,#8bd65e 120deg,#00b39d 175deg,#03a1fb 210deg,#1273d3 230deg,#9b3fb0 300deg,#f51d67 330deg,#fc3d50 360deg}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--milk);color:var(--ink);overflow-x:clip}
+body{min-height:100dvh;display:grid;place-items:center;padding:32px 20px;font:400 18px/1.55 "VV Outfit","Avenir Next","Segoe UI",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+main{width:min(640px,100%);text-align:center}
+.wheel{width:min(240px,60vw);aspect-ratio:1;margin:0 auto 40px;border-radius:50%;position:relative;overflow:hidden;isolation:isolate}
+.wheel i{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from -90deg,var(--spectrum));filter:saturate(.9)}
+.wheel::after{content:"";position:absolute;inset:18%;border-radius:50%;background:var(--milk)}
+.wheel span{position:absolute;inset:0;display:grid;place-items:center;z-index:1;font:400 clamp(44px,12vw,64px)/1 "VV Serif","Iowan Old Style",Georgia,serif;letter-spacing:-.02em}
+h1{font:400 clamp(44px,9vw,76px)/1.02 "VV Serif","Iowan Old Style",Georgia,serif;letter-spacing:-.025em;margin:0 0 18px;text-wrap:balance}
+p{color:var(--muted);margin:0 auto 32px;max-width:40ch;text-wrap:pretty}
+a{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;background:var(--ink);color:var(--milk);text-decoration:none;font-weight:500;transition:transform .2s cubic-bezier(.16,1,.3,1),background-color .2s}
+a:hover{background:#000}
+a:active{transform:scale(.98)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+@media (prefers-reduced-motion:no-preference){.wheel i{animation:turn 18s linear infinite}}
+@keyframes turn{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<main>
+  <div class="wheel" aria-hidden="true"><i></i><span>404°</span></div>
+  <h1>This page is off the wheel</h1>
+  <p>The link may be old or mistyped. The five cases, the design notes and the contact form are all on the main page.</p>
+  <a href="/">Back to 000° <span aria-hidden="true">→</span></a>
+</main>
+</body>
+</html>

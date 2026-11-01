@@ -1,0 +1,20 @@
+/* The artwork reaches the frame edge; its original proportions stay intact. */
+.tri .sheet{padding:0;overflow:hidden}
+.tri .sheet__img,.tri .sheet__img picture{display:block;aspect-ratio:auto}
+.tri .sheet__img img{display:block;width:100%;height:auto;object-fit:contain}
+@media(max-width:999px){
+  .tri .sheet{width:min(44vw,220px)}
+  .tri .wall{height:calc(min(44vw,220px) * 1.36 + 48px)}
+}
+@media(min-width:1000px){
+  /* Let the title follow the real copy height. Fixed coordinates collided
+     with the CTA as the text wrapped on smaller desktop screens. */
+  .tri .stage{--h:1040;display:flex;flex-direction:column;align-items:stretch;row-gap:40px;height:auto;min-height:calc(1040 * var(--px));padding:max(calc(144 * var(--px)),calc(108 * var(--px) + 32px)) 0 64px}
+  .tri .tri__col{position:relative;left:auto;top:auto;height:auto;margin-left:calc(32 * var(--px));order:1}
+  .tri .chapter__title{position:relative;left:calc(22 * var(--px));top:auto;width:max-content;max-width:calc(1376 * var(--px));height:auto;margin:0;font-size:calc(320 * var(--px));z-index:2;order:2;pointer-events:none}
+  .tri .sheet{width:calc(350 * var(--px))}
+  .tri .tri__hint{top:calc(700 * var(--px))}
+  html:not(.js) .tri .sheet[data-slot=left]{left:calc(555 * var(--px));top:calc(172 * var(--px));transform:rotate(6deg)}
+  html:not(.js) .tri .sheet[data-slot=centre]{left:calc(800 * var(--px));top:calc(95 * var(--px));transform:rotate(-1.5deg)}
+  html:not(.js) .tri .sheet[data-slot=right]{left:calc(1045 * var(--px));top:calc(100 * var(--px));transform:rotate(-6deg)}
+}

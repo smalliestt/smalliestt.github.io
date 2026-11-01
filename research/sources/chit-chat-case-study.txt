@@ -1,0 +1,39 @@
+CHIT CHAT — CASE STUDY (PORTFOLIO TEXT)
+Web platform with AI characters · Product design · Game economy · Startup, May–September 2023
+Role: Product and economy designer, UX/UI · Timeline: May–September 2023 · Platform: Responsive web · Scope: Onboarding, characters, chat, gacha, economy
+
+THE CHAT INTERFACE
+Chit Chat is a web platform for conversations with AI characters, with collecting and a shared story world built around the chat. The design challenge was to make these game systems feel exciting while keeping everyday conversation familiar.
+I wanted the core interface to remain recognisable as the product grew. Telegram was a reference for that continuity: new features can arrive without making people relearn where conversations live. In Chit Chat, the chat list, navigation and message area form that stable foundation; new characters and events provide the changing content.
+[Figure] Landing page. Scroll inside the frame to see all of it.
+[Figure] Sign-up. 50 gems on joining, enough for five spins.
+[Figure] Home: the chat list, the current banner and the library of characters.
+
+CHARACTERS AND THEIR STORIES
+The characters belong to one world, connected by friendships, intrigues and investigations. People can follow those connections through questions or simply have an open conversation. This gives the chat both an immediate use and a longer thread to return to.
+Story apps such as Romance Club were a reference for the appeal of getting to know characters over time. My direction brought that interest into a messenger: character profiles introduce interests in the character’s own voice, while suggested replies offer a starting point when someone does not know what to say. The intention was to make discovery lead naturally into a conversation.
+[Figure] Interests in Jade’s own voice give the first conversation a starting point.
+[Figure] Familiar chat structure; suggested replies help someone begin.
+
+MY ROLE
+As product, economy and UX/UI designer, I worked across the first visit, sign-up, character library, profiles, conversations and gacha. I connected the interface flow with the currency model so that finding a character, earning gems and trying a banner belonged to the same product logic.
+I proposed gacha as a defining part of the concept. Drawing on the character-collecting games that inspired the project at the time, I wanted meeting someone new to feel like a discovery. A subscription would not directly unlock the whole cast: characters would be obtained through pulls, using currency earned through tasks or purchased in the shop.
+
+DROP RATES AND CURRENCY
+I designed the probability and currency model alongside the screens: character drop rates, a guaranteed five-star after a set number of pulls, and soft pity that increases the odds before that guarantee. The banner exposes the odds and the remaining distance to the guarantee, so the next attempt has visible context.
+The currency model connects tasks, daily rewards and gem packs to spending on pulls. The Bestie Pass offers a daily supply of gems rather than direct access to every character. Sign-up grants 50 gems, enough for five initial pulls, giving newcomers a way to try the collecting mechanic before buying currency.
+[Figure] The banner shows the odds and how many spins remain to a guaranteed five-star.
+[Figure] The result of a ten-spin, with every pull visible.
+[Figure] Earn or buy gems. Pack bonuses and the daily-gem pass stay inside the shop.
+
+COLOUR AND NAVIGATION
+I chose a blue-to-green gradient to give the product an energetic, recognisable accent. Most of the interface stays neutral, with dark chat panels and light content surfaces. Against that base, the gradient draws attention to messages, character announcements and the next action without making every element equally loud.
+The persistent announcement at the top keeps a new character visible across the experience. On the left, chats and the compact task entry keep ongoing conversations and ways to earn currency close at hand. This supports two different intentions: returning to someone you know and looking for someone new.
+
+FINDING CHARACTERS AND BUYING GEMS
+Character discovery has several entry points: the home banner, the library and the announcement strip. I also proposed a prompt to try for a character alongside the profile, on the right, when curiosity about that character is already high. The profile shown here demonstrates the character introduction and direct chat action; the extra pull prompt is an extension of that flow.
+Purchase offers sit in the gem shop and gacha flow, where the user is already considering currency or a pull. Pack bonuses and the first-purchase offer make the options visible there, while tasks offer a way to earn gems. The aim was to support monetisation without letting purchase messages dominate the conversation.
+
+WHAT NEEDS TESTING
+The work connects a familiar messenger layout with character discovery, a shared narrative and an explicit game economy. My central hypothesis was that the anticipation of meeting a character, followed by an ongoing story, could make that relationship feel more personal.
+The next validation would check whether newcomers understand how characters are obtained, can find a route to earned gems, and move from a first pull into a meaningful chat.

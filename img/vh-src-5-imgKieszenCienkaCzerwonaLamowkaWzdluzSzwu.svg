@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="454.7" height="11.7" viewBox="0 0 454.7 11.7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Kiesze&#197;&#132; &#194;&#183; cienka czerwona lam&#195;&#179;wka wzd&#197;&#130;u&#197;&#188; szwu" opacity="0.86" filter="url(#filter0_f_0_4)">
+<path d="M1.35755 0.35C67.8555 2.68666 140.399 6.11376 219.995 6.58109C292.538 7.2042 366.089 4.71176 453.745 1.12889L454.35 5.8022C366.089 9.38508 292.538 11.8775 219.995 11.2544C140.399 10.7871 67.8555 7.35997 0.35 5.02332L1.35755 0.35Z" fill="#D1362B"/>
+</g>
+<defs>
+<filter id="filter0_f_0_4" x="0" y="0" width="454.7" height="11.7" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="0.175" result="effect1_foregroundBlur_0_4"/>
+</filter>
+</defs>
+</svg>

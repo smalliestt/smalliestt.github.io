@@ -1,0 +1,50 @@
+.vh-preview{position:relative;aspect-ratio:1.35;margin:24px 0 0;overflow:visible}
+.vh-preview .vh-preview__page{position:absolute;top:12%;left:8%;width:40%;height:auto;max-width:none;margin:0;object-fit:contain;border-radius:2px;box-shadow:0 22px 44px rgba(70,46,20,.18)}
+.vh-preview .vh-preview__page--cover{transform:rotate(-8deg);z-index:1}
+.vh-preview .vh-preview__page--inside{top:4%;left:49%;transform:rotate(7deg)}
+:is(.vh,.case--vh) .ba{grid-template-columns:minmax(0,1fr);grid-template-areas:"text" "view" "list";align-items:start}
+:is(.vh,.case--vh) .ba__text{grid-area:text}
+:is(.vh,.case--vh) .ba__list{grid-area:list;min-width:0;align-self:start}
+:is(.vh,.case--vh) .ba__view{grid-area:view;order:0;width:100%;max-width:560px;min-width:0;aspect-ratio:900/1262;border-radius:6px;overflow:hidden;background:#f3eee4;box-shadow:0 20px 45px rgba(70,46,20,.16);align-self:start;justify-self:center}
+/* The old sheet defines the shared crop. The taller redesign loses only its
+   empty foot and folio here; its complete original stays in the case gallery. */
+:is(.vh,.case--vh) .ba__img{overflow:hidden;background:#f3eee4}
+:is(.vh,.case--vh) .ba__img picture{display:block;width:100%;height:100%}
+:is(.vh,.case--vh) .ba__img img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+@media(min-width:1000px){
+  :is(.vh,.case--vh) .ba{width:min(100%,1440px);margin-inline:auto;padding:64px 32px 96px;grid-template-columns:minmax(0,1fr) minmax(0,520px);grid-template-rows:auto 1fr;grid-template-areas:"text view" "list view";column-gap:clamp(32px,6vw,96px);row-gap:32px}
+}
+@media(min-width:1000px){
+  .vh-preview{position:absolute;margin:0;aspect-ratio:auto}
+  .vh-preview .vh-preview__page{top:14%;left:16%;width:29%;height:auto}
+  .vh-preview .vh-preview__page--inside{top:7%;left:46%}
+  .vh .spread__page{left:calc((32 + var(--i) * 232) * var(--px));transform:translateX(calc((1 - var(--deal,1)) * var(--i) * -232 * var(--px))) rotate(calc(var(--tilt,0) * var(--deal,1) * 1deg))}
+}
+@media(min-width:768px){.case--vh .gallery--pages{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+.case--vh .ba--case{padding:56px 0 32px;margin-top:24px}
+.vh-mockups{width:min(1440px,100%);margin:0 auto;padding:32px var(--gr) 96px var(--gl)}
+.vh-mockups__heading{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:16px 32px;margin-bottom:32px}
+.vh-mockup-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 24px}
+.vh-mockup-grid figure{min-width:0;margin:0;display:flex;flex-direction:column;gap:12px}
+.vh-mockup-grid img{display:block;width:100%;height:auto;aspect-ratio:auto;border-radius:3px;background:#f3eee4}
+.vh-mockup-grid figcaption{font:400 14px/1.4 var(--f-ui);color:var(--ink-muted)}
+.vh-mockups--case{padding:72px 0 0}
+@media(max-width:767px){.vh-mockup-grid{grid-template-columns:minmax(0,1fr);gap:28px}.vh-mockups{padding-bottom:56px}.vh-mockups__heading{margin-bottom:24px}}
+@media(min-width:1000px){.case--vh .gallery--pages{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.vh-scene{position:relative;width:100%;overflow:hidden;isolation:isolate;border-radius:3px;background:#f3eee4}
+.vh-scene__canvas{position:absolute;left:0;top:0;transform-origin:top left}
+.vh-scene img{border-radius:0;background:transparent;aspect-ratio:auto}
+/* Put the readable, interactive spread directly in the project introduction. */
+.vh-reader{margin:32px 0;overflow:visible}
+.vh-reader .menu-book{width:100%;margin:0}
+.vh .vh-reader img{display:block;width:100%;height:100%;margin:0;max-width:100%;object-fit:contain}
+.vh-reader .menu-book__bar{margin-top:20px}
+@media(min-width:1000px){
+ .vh .stage{--h:1030}
+ .vh .chapter__title{font-size:calc(220 * var(--px))}
+ .vh-reader{margin:0;overflow:visible;aspect-ratio:auto}
+}
+
+/* the whole open menu, with its arrows and hint, always fits the window height */
+.vh-reader .menu-book{max-width:max(280px,calc((100svh - 250px) * 1.125));margin-inline:auto}

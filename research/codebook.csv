@@ -1,0 +1,50 @@
+﻿family,code,definition,include,exclude,colour,assignments
+Orientation & wayfinding,Stable layout,Elements that keep the same place across screens or pages.,"Persistent panels, fixed navigation, repeated page structure.",Visual similarity with no navigation role.,#2E7D5B,11
+Orientation & wayfinding,Entry points,Distinct routes into a feature or a piece of content.,"Banners, cards, buttons and headings that start a path.",Decorative elements that lead nowhere.,#2E7D5B,16
+Orientation & wayfinding,Wayfinding cues,"Labels, headings and markers that help someone place themselves.","Category headings, tabs, step numbers, legends, page labels.",Content text read for its own sake.,#2E7D5B,47
+Orientation & wayfinding,Return & exit paths,Ways back to familiar ground after a detour.,"Back arrows, close buttons, 'start chat' after browsing, home tab.",Exit used as a retention device (code AG.exit).,#2E7D5B,10
+Attention & hierarchy,Focal element,The single element that dominates a screen or page.,"Hero portrait, large title, central count.",Elements that share emphasis equally.,#B5443C,24
+Attention & hierarchy,Accent colour as signal,Colour used to mark the next action or the important item.,"Gradient buttons, red prices, a highlighted chip.",Colour used only for identity (code SY.colour).,#B5443C,16
+Attention & hierarchy,Scale contrast,Size differences that rank information.,"Large selected value beside small neighbours, giant type.",Uniform type sizes.,#B5443C,9
+Attention & hierarchy,Motion & reveal,Movement or staged disclosure that pulls attention.,"Spin results, reveal animation, breathing pulse.",Static layouts.,#B5443C,2
+Legibility & information design,Numerals & data,"How numbers, prices, durations and counts are set.","Price columns, timers, statistics, dates.",Numbers that carry no information (decoration).,#3466A5,35
+Legibility & information design,Type roles & pairing,Different typefaces or weights doing different jobs.,"Display vs text faces, italics for a second language.",A single style used throughout.,#3466A5,13
+Legibility & information design,Multilingual text,Two or more languages on the same surface.,"Polish/Vietnamese pairs, Polish/English menus, EN/PL posters.",Loanwords inside one language.,#3466A5,30
+Legibility & information design,Symbols & legends,"Icons, signs and emoji that replace or support words.","Dietary signs, emoji cards, QR codes, icon rows.",Pictures that carry no instruction.,#3466A5,20
+Legibility & information design,Text density,How much text competes on one surface.,"Dense lists, long descriptions, crowded columns.","Short, isolated labels.",#3466A5,16
+Agency & control,Optional steps,Steps people can skip without penalty.,"Skip links, optional notes, optional ads.",Required steps.,#7C569E,14
+Agency & control,Transparency of cost & odds,"Information that explains price, probability or terms before a decision.","Drop rates, pity counters, plan prices, 'prices include VAT'.",Price shown only after commitment.,#7C569E,13
+Agency & control,"Pause, quit & leave",Controls that interrupt an activity and explain the consequence.,"Pause/quit buttons, close icons, leave dialogs.",Navigation between unrelated screens.,#7C569E,10
+Agency & control,Starting help,Prompts that lower the effort of a first action.,"Suggested replies, presets, default durations, guided sessions.",Instructions with no actionable start.,#7C569E,15
+Feedback & progress,Completion response,Acknowledgement after finishing something.,"Result screens, congratulation, mood check-in.",Generic success toasts with no content.,#77782F,4
+Feedback & progress,History & streaks,Records of past activity.,"Calendars, session lists, streak badges, totals.",Forecasts or goals.,#77782F,10
+Feedback & progress,System states,"Screens that explain loading, offline or empty conditions.","Splash loader, offline screen, error recovery.",Normal content screens.,#77782F,5
+Feedback & progress,Progress to a goal,Visible distance to a target.,"Pity counter, 'day 1 of 5', scrubber, stamps on a loyalty card.",Past totals without a target.,#77782F,7
+Visual system & coherence,Colour system,A limited palette applied with rules.,"Brand gradient, red-and-cream, three pastel accents, cobalt.",One-off colour choices.,#AD6A30,23
+Visual system & coherence,Recurring motif,A graphic element repeated across pieces.,"Dotted dragon, ξ mark, yellow contour, starburst.",A single illustration.,#AD6A30,27
+Visual system & coherence,Typographic system,Consistent type styles across a set.,"Rounded headings plus italics, heavy grotesque titles.",Mixed type with no rule.,#AD6A30,10
+Visual system & coherence,Series consistency,Elements that tie a series while each piece varies.,"Poster templates, shared footer, triptych treatment.",Pieces with nothing in common.,#AD6A30,17
+Visual system & coherence,Brand touchpoints,The identity extended to objects and formats beyond the main piece.,"Bag, box, loyalty card, apron, tees.",The core menu or screen itself.,#AD6A30,10
+Meaning & context,Cultural references,References to national or cultural heritage.,"Traditional Ukrainian dress, Vietnamese dish names, Diia.",Universal symbols.,#4E6C78,13
+Meaning & context,Community codes,Insider symbols a group recognises.,"ξ, binary, keyboard keys, faculty room numbers.",Signs aimed at the general public.,#4E6C78,18
+Meaning & context,Localisation,Adapting content for a language or market.,"EN versions of PL posters, EN switcher, VAT note.",Untranslated content.,#4E6C78,9
+Meaning & context,Emotional statement,Work that expresses a feeling or a position.,"War response, manifesto, handwritten words.",Neutral information.,#4E6C78,20
+Engagement & economy,Collecting & discovery,Meeting or collecting new content by chance or choice.,"Gacha banners, character library, rate-up.",Fixed catalogues.,#1F8697,13
+Engagement & economy,Currency & rewards,"Gems, points, passes and free rewards.","Gem balance, tasks, packs, loyalty stamps.",Prices for real goods without a reward loop (code AG.odds).,#1F8697,11
+Engagement & economy,Offer placement,Where purchase prompts appear and how loudly.,"Shop modal, first-purchase bonus, trial plan.",Purchase information in terms and footers.,#1F8697,8
+Engagement & economy,Onboarding incentive,Rewards or reasons to start.,"50 gems on sign-up, free trial, free ticket code.",Rewards for long-term use.,#1F8697,4
+Tone & emotional register,Calm & restraint,"Muted colour, space and slow pacing.","Pastel blocks, soft circles, quiet lists.",Energetic layouts.,#B85A7B,4
+Tone & emotional register,Play & excitement,"Energy, surprise and humour.","Stars, bursts, spirals, rotated type.",Neutral layouts.,#B85A7B,14
+Tone & emotional register,Tension & urgency,"Pressure, conflict or time limits.","Countdown timers, handwritten scrawl, sickle.",Calm states.,#B85A7B,4
+Tone & emotional register,Encouragement,"Supportive, non-judging wording or feedback.","'Calm in 5 days', 'Only you see this', positive results.",Neutral labels.,#B85A7B,9
+Design reasoning,References & precedents,Products or traditions named as inspiration.,"Telegram, Romance Club, Diia, gacha games.",Unnamed influences.,#6E5D45,3
+Design reasoning,Brief & constraints,Given limits and the job to be done.,Only the KSI mark was given; corridor viewing; old menu.,Self-chosen style preferences.,#6E5D45,6
+Design reasoning,Stated intention,What the designer wanted a decision to achieve.,"'I wanted…', 'The aim was…'.",Reported outcomes.,#6E5D45,10
+Design reasoning,Before → after,Comparison with a previous version.,"Old menu pages, redesign comparisons.",Unrelated alternatives.,#6E5D45,12
+Design reasoning,Scope & role,What the designer was responsible for.,"Role statements, deliverables, printed vs concept.",Team or client work not done by the designer.,#6E5D45,18
+Trade-offs & risks,Competing attention,Two strong elements that may fight for the first look.,"Portrait vs cost, motif vs dates, dragon vs list.",Clear single focus.,#8E4464,9
+Trade-offs & risks,Spending pressure,Mechanics that may push repeated paying.,"Random rewards, timers on banners, bonus packs.",Neutral price lists.,#8E4464,7
+Trade-offs & risks,Ambiguous reading,Signs that may be read differently by different people.,"Insider symbols, handwriting, emoji, abstract icons.",Explicit labels.,#8E4464,10
+Trade-offs & risks,Accessibility risk,Choices that may exclude some readers.,"Low-contrast small text, colour-only meaning, tiny print.",High-contrast large text.,#8E4464,5
+Validation plan,Task to observe,A concrete task for a future interview or test.,"'Find…', 'Compare…', 'Set the timer…'.",General opinions.,#5A6470,22
+Validation plan,Evidence gap,What the materials cannot show on their own.,Statements about outcomes that need data.,Settled facts about the artefact.,#5A6470,10

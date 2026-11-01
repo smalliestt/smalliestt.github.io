@@ -1,0 +1,34 @@
+{
+ "date": "2026-10-30",
+ "project": "Portfolio design review",
+ "maxqda": {
+  "version": "MAXQDA Analytics Pro 27.0.0",
+  "file": "software/portfolio-design-review.mqda",
+  "checks": [
+   "REFI-QDA project opened through Home → Open Project",
+   "84 documents in five document groups; 61 codes in 12 families with colours",
+   "653 coded segments; image regions and text passages inspected in the Document Browser",
+   "Code Matrix Browser run across the five document groups",
+   "Project exported as REFI-QDA for ATLAS.ti"
+  ]
+ },
+ "atlasti": {
+  "version": "ATLAS.ti 26.2.0 (35445)",
+  "file": "software/portfolio-design-review.atlasti",
+  "exchange_file": "software/portfolio-atlas.qdpx",
+  "checks": [
+   "Exchange file imported through Project → Import Project",
+   "Overview: 84 documents, 5 document groups, 653 quotations, 61 codes, 8 memos",
+   "Code families shown with subcodes and frequencies in the Code Manager",
+   "Image quotations and margin codes inspected on the Chit Chat banner",
+   "Project exported as an .atlasti bundle"
+  ]
+ },
+ "interchange_notes": [
+  "One coded fragment can carry several codes. The review has 350 fragments with 653 code assignments; MAXQDA and ATLAS.ti store each assignment as its own segment or quotation, so both show 653.",
+  "ATLAS.ti reads the end of a text selection one character earlier than MAXQDA, so the ATLAS.ti exchange file moves each text end position by one character. ATLAS.ti flagged three passages that end exactly at the end of a document as possibly shifted; check those three if exact boundaries matter.",
+  "Code counts describe the materials, not people. No interviews have taken place yet."
+ ],
+ "participants": 0,
+ "interviews": "planned, not yet conducted"
+}

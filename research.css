@@ -1,0 +1,82 @@
+@font-face{font-family:'Research Outfit';src:url('fonts/portfolio-outfit.ttf') format('truetype');font-weight:300;font-display:swap}@font-face{font-family:'Research Outfit';src:url('fonts/portfolio-outfit.ttf') format('truetype');font-weight:400;font-display:swap}@font-face{font-family:'Research Outfit';src:url('fonts/portfolio-outfit.ttf') format('truetype');font-weight:500;font-display:swap}@font-face{font-family:'Research Outfit';src:url('fonts/portfolio-outfit.ttf') format('truetype');font-weight:600;font-display:swap}@font-face{font-family:'Research Outfit';src:url('fonts/portfolio-outfit.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:'Research Serif';src:url('fonts/portfolio-instrument-serif.ttf') format('truetype');font-weight:400;font-display:swap}
+/* Vietnamese letters (ệ, ơ, ở, ị…) are missing from Outfit and Instrument Serif. These small supplements are built from each font's own glyphs and only cover those letters. */
+@font-face{font-family:'Research Outfit';font-style:normal;font-weight:300;font-display:swap;src:url('fonts/vn-outfit-300.woff') format('woff');unicode-range:U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF1,U+1EF4-1EF9}
+@font-face{font-family:'Research Outfit';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/vn-outfit-400.woff') format('woff');unicode-range:U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF1,U+1EF4-1EF9}
+@font-face{font-family:'Research Outfit';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/vn-outfit-500.woff') format('woff');unicode-range:U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF1,U+1EF4-1EF9}
+@font-face{font-family:'Research Outfit';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/vn-outfit-600.woff') format('woff');unicode-range:U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF1,U+1EF4-1EF9}
+@font-face{font-family:'Research Outfit';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/vn-outfit-700.woff') format('woff');unicode-range:U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF1,U+1EF4-1EF9}
+@font-face{font-family:'Research Serif';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/vn-instrument-serif.woff') format('woff');unicode-range:U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF1,U+1EF4-1EF9}
+
+.research{--research-accent:currentColor;padding-top:40px;border-top:1px solid color-mix(in srgb,currentColor 22%,transparent)}
+.research__jump{margin-top:22px;font:500 14px/1.5 var(--f-ui)}
+.research__jump a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:4px}
+.research__body,.research__intro{min-width:0}
+.research__intro .case__h{font-family:'Research Serif',var(--f-display);font-size:clamp(40px,5vw,62px);line-height:1.05;max-width:16ch}
+.research__status{display:inline-block;font:500 12px/1.4 var(--f-ui);padding:8px 12px;border:1px solid color-mix(in srgb,currentColor 35%,transparent);border-radius:999px;margin-bottom:20px}
+.research__entry{margin-top:25px}
+.research__entry h4{font:600 14px/1.5 var(--f-ui);margin:0 0 9px;color:var(--research-accent)}
+.research__entry p,.research__details p,.research__details li{font:400 16px/1.65 var(--f-ui);text-wrap:pretty}
+.research__details{border-top:1px solid color-mix(in srgb,currentColor 22%,transparent);margin-top:24px}
+.research__details+.research__details{margin-top:0}
+.research__details summary{font:500 16px/1.4 var(--f-ui);padding:18px 30px 18px 0;cursor:pointer;position:relative;list-style:none}
+.research__details summary::-webkit-details-marker{display:none}
+.research__details summary::after{content:'+';position:absolute;right:2px;top:50%;font-size:23px;font-weight:300;line-height:1;transform:translateY(-54%)}
+.research__details[open] summary::after{content:'−'}
+.research__details[open]{padding-bottom:22px}
+.research__details ol{padding-left:22px}
+.research__details li+li{margin-top:15px}
+.research__details p{margin-top:16px}
+.research__sources a{font-weight:600;text-underline-offset:4px;color:var(--research-accent)}
+.research__sources span{display:block;margin-top:5px}
+.research__note{font:400 13px/1.6 var(--f-ui);margin:20px 0;max-width:65ch}
+.research__links{display:flex;flex-wrap:wrap;column-gap:24px;row-gap:4px}
+.research__links a{display:inline-flex;align-items:center;min-height:44px;font:500 14px/1.4 var(--f-ui);text-underline-offset:4px;color:var(--research-accent)}
+.research a{overflow-wrap:anywhere}
+.research a:focus-visible,.research summary:focus-visible{outline:2px solid currentColor;outline-offset:5px}
+.research__preview{display:flex;align-items:center;justify-content:center;gap:10px;margin:32px 0 0;max-width:410px}
+.research__preview img{display:block;min-width:0;width:100%;height:auto;object-fit:contain}
+.research__preview--cc img{border-radius:12px}
+.research__preview--em{justify-content:flex-start;gap:16px}
+.research__preview--em img{width:calc((100% - 16px)/2);max-width:140px;border-radius:11%/5%}
+.research__preview--em img:last-child{margin-top:30px}
+.research__preview--tri img{width:calc((100% - 20px)/3)}
+.research__preview--vh{gap:0}
+.research__preview--vh img{width:50%}
+.research__preview--ksi{padding:16px;background:#2b29e9;align-items:flex-end}
+.research__preview--ksi img{width:calc((100% - 10px)/2)}
+.case--cc .case__h{font-family:Sora,var(--f-ui);font-weight:600;font-size:clamp(30px,4vw,48px);line-height:1.15}
+.case--cc .research{--f-ui:Montserrat,sans-serif;--research-accent:#a6e6f2;background:#333;color:#fafafa;border:0;border-radius:24px;padding:clamp(24px,4vw,48px);gap:32px}
+.case--cc .research .case__h{font-family:Sora,sans-serif;font-weight:600;font-size:clamp(30px,3.6vw,43px);line-height:1.2;letter-spacing:-.025em}
+.case--cc .research__status{background:linear-gradient(90deg,#bcffcf,#85d3ff);color:#252525;border:0;font-weight:600}
+.case--em .research{--research-accent:#c3ef9e;--f-ui:'Research Outfit',sans-serif}
+.case--em .research__intro .case__h{color:#c3ef9e}
+.case--em .research__status{background:#dcefcf;color:#193222;border:0}
+.case--tri .research{--f-ui:'Research Outfit',sans-serif}
+.case--tri .research__status{border-radius:3px;background:#f9e9d8;color:#271c16;border:0}
+.case--vh .case__h{font-family:'Research Outfit',var(--f-ui);font-weight:600;color:#b92720;font-size:clamp(32px,4vw,52px);line-height:1.12}
+.case--vh .research{--research-accent:#b92720;--f-ui:'Research Outfit',sans-serif;background:#f3eee4;padding:clamp(24px,4vw,48px);border:0}
+.case--vh .research .case__h{font-family:'Research Outfit',sans-serif;font-size:clamp(34px,4vw,52px);font-weight:600;color:#b92720}
+.case--vh .research__status{border-color:#b92720;border-radius:3px;color:#b92720}
+.case--ksi .case__h{font-family:'Research Outfit',var(--f-ui);font-weight:600;font-size:clamp(34px,4vw,52px);line-height:1.1}
+.case--ksi .research{--research-accent:#c4c2ff;--f-ui:'Research Outfit',sans-serif}
+.case--ksi .research .case__h{font-family:'Research Outfit',sans-serif;font-weight:600;font-size:clamp(36px,4vw,54px)}
+.case--ksi .research__status{border-radius:2px;background:#c4c2ff;color:#151329;border:0}
+.research__stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:26px 0 0;border-block:1px solid color-mix(in srgb,currentColor 22%,transparent)}
+.research__stats>div{display:flex;flex-direction:column;padding:14px 12px 12px 0;min-width:0}
+.research__stats>div+div{padding-left:14px;border-left:1px solid color-mix(in srgb,currentColor 22%,transparent)}
+.research__stats dt{order:2;font:400 12px/1.35 var(--f-ui);opacity:.78;margin-top:6px}
+.research__stats dd{margin:0;font:400 clamp(30px,3.2vw,40px)/1 'Research Serif',var(--f-display);font-variant-numeric:lining-nums tabular-nums;letter-spacing:-.02em}
+.case--cc .research__stats dd{font-family:Sora,sans-serif;font-weight:600;letter-spacing:-.04em}
+.case--vh .research__stats dd,.case--ksi .research__stats dd{font-family:'Research Outfit',sans-serif;font-weight:600;letter-spacing:-.04em}
+.case--vh .research__stats dd{color:#b92720}
+.research__mix{margin-top:20px}
+.research__mix-label{font:500 12px/1.4 var(--f-ui);opacity:.78;margin:0 0 9px}
+.research__mix-bar{display:flex;gap:2px;height:10px;border-radius:2px;overflow:hidden}
+.research__mix-bar span{background:var(--c);min-width:3px}
+.research__mix-legend{list-style:none;display:flex;flex-wrap:wrap;gap:6px 18px;margin:10px 0 0;padding:0;font:400 13px/1.4 var(--f-ui)}
+.research__mix-legend li{display:inline-flex;align-items:center;gap:7px}
+.research__mix-legend li::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--c)}
+.research__mix-legend b{font-weight:600;font-variant-numeric:tabular-nums}
+@media(max-width:767px){.research__stats{grid-template-columns:repeat(2,minmax(0,1fr))}.research__stats>div:nth-child(3){padding-left:0;border-left:0}.research__stats>div:nth-child(n+3){border-top:1px solid color-mix(in srgb,currentColor 22%,transparent)}}
+@media(max-width:767px){.research{gap:28px}.research__intro .case__h{font-size:42px}.research__links{flex-direction:column;align-items:flex-start}.research__preview{max-width:340px;margin-top:24px}.research__preview--em img{max-width:115px}.case--cc .research .case__h{font-size:32px}.research .case__p{font-size:19px}}

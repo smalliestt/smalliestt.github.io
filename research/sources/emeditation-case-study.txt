@@ -1,0 +1,50 @@
+EMEDITATION — CASE STUDY (PORTFOLIO TEXT)
+Meditation app concept · UX/UI · Swift prototype · Personal project
+Role: Product designer, UX/UI · Platform: iOS · Prototype: Swift · Scope: Research to prototype, on my own
+
+THE APP CONCEPT
+eMeditation is a personal iOS app concept for short meditation and breathing practices. I wanted someone to open it, recognise a suitable activity and begin with very little setup. My starting point was the visual language of Ukrainian digital services, especially Diia: concise screens, clear blocks of information and familiar emoji.
+I developed the project independently, from exploring scenarios and the visual system to a Swift prototype. The focus was the full practice journey: choosing an activity, setting it up, following it and seeing what was completed.
+
+THREE TYPES OF PRACTICE
+The home screen offers a short timer, guided meditation and a two-minute breathing exercise. Each entry describes a concrete action, so someone can choose between practising alone, listening to guidance or following a breathing rhythm without first navigating a large catalogue.
+I used three main accent colours—muted green, pale yellow and soft pink—to separate information into recognisable blocks. Familiar emoji give activities a quick visual cue. The subdued palette supports the calm tone I wanted for the app; dark text and generous type keep the content readable.
+[Figure] Home
+[Figure] Guided sessions
+[Figure] Player
+[Figure] Timer
+
+SETTING THE TIMER
+Small numerals and cramped duration pickers were a personal frustration in the timer interfaces I considered. I wanted setting the time to be one of the easiest parts of the app, so I made the selected duration the main visual element.
+Minutes and seconds sit in separate horizontal selectors, with the selected value much larger than its neighbours. The adjacent numbers explain the direction of adjustment, while a distinct Start button gives the setup a clear endpoint. Sound choices sit above the duration, keeping the primary decision in focus.
+
+THE BREATHING EXERCISE
+The breathing flow introduces the sequence before it starts: inhale for four counts, hold for seven, exhale for eight. During the exercise, each phase fills the screen with its own soft colour, a short instruction and a large count.
+Green, pink and yellow distinguish the three stages. Colour reinforces the instruction rather than carrying it alone: the words and count remain visible. This keeps the screen simple during a practice, when reading a dense explanation would compete with following the rhythm.
+[Figure] Before you start
+[Figure] Breathe in · 4
+[Figure] Hold · 7
+[Figure] Breathe out · 8
+
+AFTER A SESSION
+Finishing a short practice deserves a response. For the completion flow, I proposed a brief congratulatory message that acknowledges the time the person made for themselves, followed by an optional mood check-in. This is encouragement without requiring a long reflection after every session.
+The mood screen shown here uses five familiar expressions, from tense to calm, and an optional note. People can save a response or skip it. That lets the experience recognise how someone feels without turning the end of a practice into another task.
+
+PRACTICE HISTORY
+The progress screen brings together a calendar, completed sessions, time spent practising and recent activities. These views answer different questions: when did I practise, how much time did I make for it, and what did I do?
+I included progress even in this small app because a one-minute session can otherwise feel easy to overlook. Making those moments visible was intended to help people recognise their effort and return. The counts in the mockups are illustrative.
+
+ONBOARDING, SETTINGS AND OFFLINE USE
+I designed the surrounding states as part of the experience: onboarding, subscription, settings, mood check-in, practice history, offline access and the decision to leave an exercise. They explain what happens before and after the central action, rather than leaving those moments to generic dialogs.
+The offline state points people to downloaded meditations. The exit dialog explains that leaving the breathing exercise will not count toward statistics. A separate support card proposes donating half of the revenue from an optional short ad to the Armed Forces of Ukraine.
+[Figure] Splash
+[Figure] Onboarding
+[Figure] Calendar, time and recent sessions. Illustrative data.
+[Figure] Optional mood check-in; a congratulatory message is proposed for the preceding step.
+[Figure] Subscription
+[Figure] Offline
+[Figure] Leaving mid-session
+
+WHAT NEEDS TESTING
+The concept and Swift prototype establish the interaction direction. The next usability check would focus on whether people can set a duration without explanation, distinguish the breathing stages and find their previous sessions.
+I would also check whether the completion message and statistics feel encouraging, especially after a break in practice. The intended effect is a calmer start and a clearer sense of progress; a change in habit or wellbeing would need separate evidence.

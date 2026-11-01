@@ -1,0 +1,2 @@
+/* A static measuring point: the animated screens never influence their own trigger. */
+#emeditation .em-fan-anchor{position:absolute;left:50%;width:1px;height:1px;pointer-events:none}
