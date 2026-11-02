@@ -188,7 +188,7 @@ a.nav__logo:hover .face{transform:rotate(-6deg)}
 .hero__name{position:absolute;left:0;right:0;top:calc(96px + env(safe-area-inset-top,0px));text-align:center;font-family:var(--f-display);font-weight:400;font-size:23.6vw;line-height:.9;letter-spacing:-.03em;margin:0;white-space:nowrap}
 .hero__name .w{display:block}
 .hero__name .w--it{font-style:italic}
-.hero__name .ch{display:inline-block;transition:color var(--t-slow) cubic-bezier(.25,.1,.25,1)}
+.hero__name .ch{display:inline-block;padding:0 .12em;margin:0 -.12em;transition:color var(--t-slow) cubic-bezier(.25,.1,.25,1)}
 .hero__side{position:absolute;margin:0;font:400 14px/1.42 var(--f-ui)}
 .hero__side--l{left:0;right:0;text-align:center;top:calc(96px + 23.6vw * 1.8 + 28px + env(safe-area-inset-top,0px));padding-inline:var(--gl) var(--gr);max-width:340px;margin-inline:auto}
 .hero__side--r{display:none}
@@ -2299,13 +2299,14 @@ html:has(#case-ksi[open]){background:#15120f}
     const a = ink(first), b = ink(last), ra = first.getBoundingClientRect(), rb = last.getBoundingClientRect();
     // a running intro lifts the letters: measure where they rest
     const lift = ch => { const t = getComputedStyle(ch).transform; return t && t !== 'none' ? new DOMMatrix(t).m41 : 0; };
-    const L = ra.left - lift(first) - a.actualBoundingBoxLeft - hr.left, R = hr.right - (rb.left - lift(last) + b.actualBoundingBoxRight);
+    const pad = ch => parseFloat(getComputedStyle(ch).paddingLeft) || 0;
+    const L = ra.left + pad(first) - lift(first) - a.actualBoundingBoxLeft - hr.left, R = hr.right - (rb.left + pad(last) - lift(last) + b.actualBoundingBoxRight);
     heroEl.style.setProperty('--ink-l', Math.round(L) + 'px'); heroEl.style.setProperty('--ink-r', Math.round(R) + 'px');
   }
   nameInk();
   if (document.fonts) document.fonts.ready.then(nameInk);
   addEventListener('resize', nameInk, { passive: true });
-  // Figma "Hover · letters catch the light": every letter on the cursor's line takes the spectrum in order, one stop per
+  // Figma "Hover · letters catch the light": the letters around the cursor take the spectrum in order, one stop per
   // letter, starting from the hue of the wheel below the cursor; a letter the light leaves fades back to ink in 600 ms.
   const STOP_LAB = STOPS.map(s => rgbToOklab(hexToRgb(s[1])));
   function stopColor(u) {
@@ -2337,6 +2338,7 @@ html:has(#case-ksi[open]){background:#15120f}
       const u0 = Math.round(hueToStop(Math.asin(clamp((px - wheel.left - R) / R, -1, 1)) * 180 / Math.PI + wheel.applied)), c = Math.round(f);
       const now = new Set();
       for (const b of line) {
+        if (Math.abs(b.i - f) > 5) continue;
         b.ch.style.transitionDuration = '140ms'; b.ch.style.color = STOPS[(((u0 + b.i - c) % 9) + 9) % 9][1]; now.add(b.ch);
       }
       for (const ch of lit) if (!now.has(ch)) out(ch);
