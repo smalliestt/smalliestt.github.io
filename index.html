@@ -2305,7 +2305,7 @@ html:has(#case-ksi[open]){background:#15120f}
   nameInk();
   if (document.fonts) document.fonts.ready.then(nameInk);
   addEventListener('resize', nameInk, { passive: true });
-  // Figma "Hover · letters catch the light": the letters around the cursor take the spectrum in order, one stop per
+  // Figma "Hover · letters catch the light": every letter on the cursor's line takes the spectrum in order, one stop per
   // letter, starting from the hue of the wheel below the cursor; a letter the light leaves fades back to ink in 600 ms.
   const STOP_LAB = STOPS.map(s => rgbToOklab(hexToRgb(s[1])));
   function stopColor(u) {
@@ -2337,7 +2337,6 @@ html:has(#case-ksi[open]){background:#15120f}
       const u0 = Math.round(hueToStop(Math.asin(clamp((px - wheel.left - R) / R, -1, 1)) * 180 / Math.PI + wheel.applied)), c = Math.round(f);
       const now = new Set();
       for (const b of line) {
-        if (Math.abs(b.i - f) > 5) continue;
         b.ch.style.transitionDuration = '140ms'; b.ch.style.color = STOPS[(((u0 + b.i - c) % 9) + 9) % 9][1]; now.add(b.ch);
       }
       for (const ch of lit) if (!now.has(ch)) out(ch);
